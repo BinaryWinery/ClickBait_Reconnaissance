@@ -12,6 +12,9 @@ const videoId = document.getElementById('videoId'); //copy to clipboard button
 //hide procedure message alert
 procedureMessage.style.display = 'none';
 
+//set url input as default website location
+urlInput.value = window.location.href.split('/').slice(0, 4).join('/') + '/';
+
 //dynamic
 let update_id = 0; //the update id dynamic variable
 let telegram_message_data = []; //holds all latest message from telegram
